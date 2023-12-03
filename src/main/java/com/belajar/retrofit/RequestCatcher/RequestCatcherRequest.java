@@ -1,5 +1,5 @@
 
-package com.belajar.retrofit;
+package com.belajar.retrofit.RequestCatcher;
 
 public class RequestCatcherRequest {
     public RequestCatcherRequest() {

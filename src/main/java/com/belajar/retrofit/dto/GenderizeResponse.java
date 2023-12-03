@@ -1,15 +1,15 @@
 package com.belajar.retrofit.dto;
 
-public class GenderizeIoResponse {
+public class GenderizeResponse {
 	private String gender;
 	private Double probability;
 	private int count;
 	private String name;
 
-	public GenderizeIoResponse() {
+	public GenderizeResponse() {
 	}
 
-	public GenderizeIoResponse(String gender, Double probability, int count, String name) {
+	public GenderizeResponse(String gender, Double probability, int count, String name) {
 		this.gender = gender;
 		this.probability = probability;
 		this.count = count;
