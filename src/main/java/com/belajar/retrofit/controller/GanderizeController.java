@@ -2,7 +2,7 @@ package com.belajar.retrofit.controller;
 
 
 import com.belajar.retrofit.dto.BaseResponse;
-import com.belajar.retrofit.service.GanderizeService;
+import com.belajar.retrofit.service.GenderizeService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,15 +13,14 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/ganderize")
 public class GanderizeController {
-    GanderizeService ganderizeService;
+    private final GenderizeService genderizeService;
 
-    public GanderizeController(GanderizeService ganderizeService) {
-        this.ganderizeService = ganderizeService;
+    public GanderizeController(GenderizeService genderizeService) {
+        this.genderizeService = genderizeService;
     }
 
     @GetMapping("/{name}")
     public BaseResponse getGender(@PathVariable String name) throws IOException {
-        return ganderizeService.getGender(name);
+        return genderizeService.getGender(name);
     }
-
 }

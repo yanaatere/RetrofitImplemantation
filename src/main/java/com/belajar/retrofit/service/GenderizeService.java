@@ -4,13 +4,16 @@ import com.belajar.retrofit.dto.BaseResponse;
 import com.belajar.retrofit.dto.GenderizeResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import retrofit2.*;
+import retrofit2.Call;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
 import java.io.IOException;
 
 @Service
-public class GanderizeService {
+public class GenderizeService {
+
     public BaseResponse getGender(String name) throws IOException {
 
         final GenderizeResponse[] body = {new GenderizeResponse()};

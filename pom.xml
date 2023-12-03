@@ -47,7 +47,19 @@
 			<artifactId>converter-jackson</artifactId>
 			<version>2.9.0</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock-standalone -->
+		<dependency>
+			<groupId>com.github.tomakehurst</groupId>
+			<artifactId>wiremock-standalone</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
